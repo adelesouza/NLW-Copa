@@ -7,21 +7,21 @@
 :root {
   --card-title-border-color: #746615;
   --card-color-primary: #f7dd43;
-  --card-bg-color: #1d1c19; 
+  --card-bg-color: #1d1c19;
   --bg: url(./assets/bg-yellow.svg);
 }
 
 body.blue {
-  --card-title-border-color: #338AF3;
-  --card-color-primary: #338AF3;
-  --card-bg-color: #202024; 
+  --card-title-border-color: #338af3;
+  --card-color-primary: #338af3;
+  --card-bg-color: #202024;
   --bg: url(./assets/bg-blue.svg);
 }
 
 body.green {
-  --card-title-border-color: #047C3F;
-  --card-color-primary: #047C3F;
-  --card-bg-color: #1A1F1B; 
+  --card-title-border-color: #047c3f;
+  --card-color-primary: #047c3f;
+  --card-bg-color: #1a1f1b;
   --bg: url(./assets/bg-green.svg);
 }
 
@@ -60,7 +60,7 @@ header {
   padding: 32px 23px;
   text-align: center;
 
-  background: var(--card-bg-color) ;
+  background: var(--card-bg-color);
   border-bottom: 2px solid var(--card-color-primary);
   border-radius: 6px;
 }
@@ -116,16 +116,17 @@ header {
 
   color: #e1e1e6;
 }
-.card h2:hover,
-.card ul li strong:hover, 
-.card ul li img:hover {
+
+/* .card ul li strong:hover,  */
+/*.card ul li img:hover,*/
+header img:hover {
   /* ":hover" - vai ser executado quando o mouse estiver sobre a imagem. */
   transform: scale(1.1);
 }
 
-.card h2:hover,
-.card ul li strong, 
-.card ul li img {
+/* .card ul li strong, 
+.card ul li img */
+header img {
   /* ":hover" - vai ser executado quando o mouse estiver sobre a imagem. */
   transition: transform 0.3s;
 }
@@ -137,21 +138,20 @@ header {
 
 /* criando animação */
 @keyframes appear {
-0% { 
-  transform: translateY(50px);
-  opacity: 0;
-}
-100% {
-  transform: translateY(0px);
-  opacity: 1;
-}
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 700px) {
   #cards {
     /* max-width: 670px; se os cards passarem dessa largura, eles "transbordam" (wrap) */
     flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
   }
 }
-
